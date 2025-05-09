@@ -1,0 +1,39 @@
+{
+    "books": [
+        {
+            "author": "Saddi",
+            "free": 0,
+            "id": 13,
+            "price": 100,
+            "title": "Golestan"
+        },
+        {
+            "author": "A11",
+            "free": 0,
+            "id": 14,
+            "price": 40,
+            "title": "D"
+        },
+        {
+            "author": "A12",
+            "free": 1,
+            "id": 0.05114815778947812,
+            "price": 50,
+            "title": "E"
+        },
+        {
+            "author": "A13",
+            "free": 0,
+            "id": 0.39147499940197794,
+            "price": 60,
+            "title": "F"
+        },
+        {
+            "author": "Amani",
+            "free": 1,
+            "id": 2,
+            "price": 1000,
+            "title": "Programming"
+        }
+    ]
+}
