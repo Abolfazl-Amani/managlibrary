@@ -1,10 +1,13 @@
 const http = require('http')
 const fs = require('fs')
 const url = require('url')
+require('dotenv').config()
 const db = require('./db.json')
+
 function validUser(database, nUser){
     return database.users.some((user) => (user.username === nUser.username || user.email === nUser.email))
 }
+
 const server = http.createServer((req, res) => {
     if(req.method === "GET" && req.url === "/api/users"){ // GetAllUsers API
         fs.readFile("db.json", (err, data) => {
@@ -272,6 +275,8 @@ const server = http.createServer((req, res) => {
         }
     }
 })
-server.listen(4000, () => {
-    console.log("Server is running on port 4000")
+
+const Port = process.env.PORT || 3000;
+server.listen(Port, () => {
+    console.log(`Server is running on port ${Port}`);
 })
